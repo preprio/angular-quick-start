@@ -1,0 +1,10 @@
+<h1>My blog site</h1>
+
+<ul>
+
+  <li *ngFor='let article of articles;'>
+    <a routerLink="{{article._slug}}" >
+      {{article.title}}
+    </a>
+  </li>
+</ul>

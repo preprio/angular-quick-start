@@ -1,8 +1,6 @@
 # angular-quick-start
 The Angular quick start project launches a blog app with content from Prepr.
 
-[Stackblitz demo](https://stackblitz.com/edit/angular-quick-start)
-
 ## Setup
 
 Make sure to install the dependencies:

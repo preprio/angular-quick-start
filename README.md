@@ -1,5 +1,5 @@
-# next-quick-start
-The Next quick start project launches a blog app with content from Prepr.
+# angular-quick-start
+The Angular quick start project launches a blog app with content from Prepr.
 
 [Stackblitz demo](https://stackblitz.com/edit/angular-quick-start)
 

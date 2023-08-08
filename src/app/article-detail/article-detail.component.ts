@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import {Subscription} from "rxjs";
 import {Apollo} from "apollo-angular";
-import {GetArticles} from "../../queries/getArticles";
-import {GetArticleBySlug} from "../../queries/getArticleBySlug";
+import {GetArticles} from "../../queries/get-articles";
+import {GetArticleBySlug} from "../../queries/get-article-by-slug";
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 
 @Component({

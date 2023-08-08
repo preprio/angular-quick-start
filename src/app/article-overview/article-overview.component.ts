@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Subscription} from "rxjs";
 import {Apollo} from "apollo-angular";
-import {GetArticles} from "../../queries/getArticles";
+import {GetArticles} from "../../queries/get-articles";
 @Component({
   selector: 'app-article-overview',
   templateUrl: './article-overview.component.html',

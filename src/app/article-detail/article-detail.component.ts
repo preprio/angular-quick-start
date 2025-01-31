@@ -6,9 +6,10 @@ import {GetArticleBySlug} from "../../queries/get-article-by-slug";
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 
 @Component({
-  selector: 'app-article-detail',
-  templateUrl: './article-detail.component.html',
-  styleUrls: ['./article-detail.component.css']
+    selector: 'app-article-detail',
+    templateUrl: './article-detail.component.html',
+    styleUrls: ['./article-detail.component.css'],
+    standalone: false
 })
 export class ArticleDetailComponent {
   loading: boolean;

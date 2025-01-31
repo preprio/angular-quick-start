@@ -3,9 +3,10 @@ import {Subscription} from "rxjs";
 import {Apollo} from "apollo-angular";
 import {GetArticles} from "../../queries/get-articles";
 @Component({
-  selector: 'app-article-overview',
-  templateUrl: './article-overview.component.html',
-  styleUrls: ['./article-overview.component.css']
+    selector: 'app-article-overview',
+    templateUrl: './article-overview.component.html',
+    styleUrls: ['./article-overview.component.css'],
+    standalone: false
 })
 export class ArticleOverviewComponent {
   loading: boolean;

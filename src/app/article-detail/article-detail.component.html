@@ -1,17 +1,18 @@
 <div>
-  <h1>
-    {{ article.title }}
-  </h1>
+    <h1>
+        {{ article.title }}
+    </h1>
 
-  <div *ngFor='let contentType of article.content;'>
-    <div *ngIf='contentType.__typename === "Assets" && contentType.items.length'>
-      <img
-        src='{{contentType.items[0]?.url}}'
-        width="300"
-        height="250"
-      />
-    </div>
-    <div *ngIf='contentType.__typename === "Text"' innerHTML="{{contentType.body}}">
-    </div>
-  </div>
+    @for (contentType of article.content; track contentType) {
+        @if (contentType.__typename === "Assets" && contentType.items.length) {
+            <img
+                    [src]="contentType.items[0]?.url"
+                    width="300"
+                    height="250"
+            />
+        }
+        @if (contentType.__typename === "Text") {
+            <div [innerHTML]="contentType.body"></div>
+        }
+    }
 </div>

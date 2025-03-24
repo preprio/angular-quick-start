@@ -1,9 +1,9 @@
 <div>
     <h1>
-        {{ article.title }}
+        {{ post.title }}
     </h1>
 
-    @for (contentType of article.content; track contentType) {
+    @for (contentType of post.content; track contentType) {
         @if (contentType.__typename === "Assets" && contentType.items.length) {
             <img
                     [src]="contentType.items[0]?.url"

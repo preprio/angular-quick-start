@@ -1,19 +1,19 @@
 import { Component, effect, inject } from '@angular/core';
 import { PreprService } from '../services/prepr.service';
-import { GetArticleBySlug } from '../queries/get-article-by-slug';
+import { GetPostBySlug } from '../queries/get-post-by-slug';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-article-detail',
+  selector: 'app-post-detail',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './article-detail.component.html',
-  styleUrl: './article-detail.component.css'
+  templateUrl: './post-detail.component.html',
+  styleUrl: './post-detail.component.css'
 })
-export class ArticleDetailComponent {
-  article: any = {};
+export class PostDetailComponent {
+  post: any = {};
 
   private route = inject(ActivatedRoute);
   private preprService = inject(PreprService);
@@ -22,8 +22,8 @@ export class ArticleDetailComponent {
     effect(async () => {
       const slug = this.route.snapshot.paramMap.get('slug');
 
-      const response = await this.preprService.fetchData(GetArticleBySlug, { slug });
-      this.article = response.data.Article;
+      const response = await this.preprService.fetchData(GetPostBySlug, { slug });
+      this.post = response.data.Post;
     });
   }
 }

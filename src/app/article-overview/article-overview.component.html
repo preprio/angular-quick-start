@@ -1,9 +1,0 @@
-<h1>My blog site</h1>
-
-<ul>
-    @for (article of articles; track article._slug) {
-        <li>
-            <a [routerLink]="article._slug">{{ article.title }}</a>
-        </li>
-    }
-</ul>

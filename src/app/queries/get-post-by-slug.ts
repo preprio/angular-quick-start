@@ -3,6 +3,9 @@ query ($slug: String) {
     Post (slug: $slug) {
         _id
         title
+        cover {
+            url(width: 300, height: 250)
+        }
         content {
             __typename
             ... on Text {
@@ -13,7 +16,7 @@ query ($slug: String) {
             ... on Assets {
                 items {
                     _id
-                    url
+                    url(width: 300, height: 250)
                 }
             }
         }

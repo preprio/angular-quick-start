@@ -3,12 +3,16 @@
         {{ post.title }}
     </h1>
 
+    <div class="my-10">
+        <img
+                [src]="post.cover.url"
+        />
+    </div>
+
     @for (contentType of post.content; track contentType) {
         @if (contentType.__typename === "Assets" && contentType.items.length) {
             <img
                     [src]="contentType.items[0]?.url"
-                    width="300"
-                    height="250"
             />
         }
         @if (contentType.__typename === "Text") {

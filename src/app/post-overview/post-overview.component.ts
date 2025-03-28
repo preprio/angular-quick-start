@@ -1,5 +1,5 @@
 import { Component, effect, inject } from '@angular/core';
-import { PreprService } from '../services/prepr-service';
+import { PreprService } from '../services/prepr.service';
 import { GetPosts } from '../queries/get-posts';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';

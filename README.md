@@ -46,4 +46,4 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## The end result
 
-![blog site end result](https://assets-site.prepr.io//5oz8w28ybxje-screenshot-2023-05-10-at-111353.png)
+![blog site end result](https://assets-site.prepr.io/fp1a9v4zuar//angular-blog-post-site-end-result.png)

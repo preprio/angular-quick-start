@@ -1,4 +1,4 @@
-name: Check for code conflicts
+name: Auto Code Review
 
 on:
   pull_request:

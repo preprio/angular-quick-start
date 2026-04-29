@@ -1,3 +1,3 @@
 export const environment = {
-    PREPR_ENDPOINT: 'https://graphql.prepr.io/ac_8a73ce93e85c18ccec497b81cf8a6458a8cee50c50fbbda897bb9cee07e1eba0' // Replace with your Prepr GraphQL URL
+    PREPR_ENDPOINT: 'https://graphql.prepr.io/ac_e54beab08406dd41fcdead2bef10364f442559f67fe86ebb0ac7aa6e3a1a4605' // Replace with your Prepr GraphQL URL
 };

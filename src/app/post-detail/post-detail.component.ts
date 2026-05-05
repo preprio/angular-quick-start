@@ -20,7 +20,7 @@ export class PostDetailComponent {
 
   constructor() {
     effect(async () => {
-      const slug = this.route.snapshot.paramMap.get('slug');
+      const slug = `blog/${this.route.snapshot.paramMap.get('slug')}`;
 
       const response = await this.preprService.fetchData(GetPostBySlug, { slug });
       this.post = response.data.Post;

@@ -3,7 +3,7 @@
 <ul>
     @for (post of posts; track post._slug) {
         <li>
-            <a [routerLink]="post._slug">{{ post.title }}</a>
+            <a [routerLink]="['/', ...post._slug.split('/')]">{{ post.title }}</a>
         </li>
     }
 </ul>

@@ -9,7 +9,7 @@ export const routes: Routes = [
         component: PostOverviewComponent,
     },
     {
-        path: ':slug',
+        path: 'blog/:slug',
         component: PostDetailComponent,
     },
 ];

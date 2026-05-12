@@ -6,7 +6,7 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender
   },
   {
-    path: ':slug',
+    path: 'blog/:slug',
     renderMode: RenderMode.Server
   }
 ];

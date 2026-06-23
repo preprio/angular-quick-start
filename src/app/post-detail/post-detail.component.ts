@@ -1,15 +1,16 @@
-import { Component, effect, inject } from '@angular/core';
+import { Component, effect, inject, ChangeDetectionStrategy } from '@angular/core';
 import { PreprService } from '../services/prepr.service';
 import { GetPostBySlug } from '../queries/get-post-by-slug';
 import { ActivatedRoute } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-post-detail',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './post-detail.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './post-detail.component.css'
 })
 export class PostDetailComponent {

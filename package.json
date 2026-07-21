@@ -50,7 +50,7 @@
       "serialize-javascript": ">=7.0.5",
       "postcss": ">=8.5.10",
       "qs": ">=6.15.2",
-      "minimatch@3>brace-expansion": ">=1.1.12 <2",
+      "minimatch@3>brace-expansion": ">=1.1.16 <2",
       "ws": ">=8.20.1",
       "engine.io": ">=6.6.2",
       "socket.io-adapter": ">=2.5.5",

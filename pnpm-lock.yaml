@@ -18,6 +18,8 @@ overrides:
   engine.io: '>=6.6.2'
   socket.io-adapter: '>=2.5.5'
   brace-expansion@>=3: 5.0.7
+  brace-expansion@<2: 1.1.16
+  brace-expansion@>=2 <3: 2.1.2
 
 importers:
 

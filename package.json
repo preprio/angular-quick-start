@@ -12,12 +12,12 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^22.0.2",
-    "@angular/compiler": "^22.0.2",
-    "@angular/core": "^22.0.2",
+    "@angular/common": "^22.1.1",
+    "@angular/compiler": "^22.1.0",
+    "@angular/core": "^22.1.0",
     "@angular/forms": "^22.0.2",
     "@angular/platform-browser": "^22.0.2",
-    "@angular/platform-server": "^22.0.7",
+    "@angular/platform-server": "^22.1.4",
     "@angular/router": "^22.0.2",
     "@angular/ssr": "^22.0.4",
     "express": "^4.22.2",
@@ -66,9 +66,13 @@
       "@hono/node-server": "^1.19.15",
       "undici": "^6.28.0",
       "socket.io-parser": "^4.2.7",
-      "@angular/platform-server": "^22.0.7",
+      "@angular/platform-server": "^22.1.4",
       "baseline-browser-mapping": "^2.11.0",
-      "browserslist": "^4.28.7"
+      "browserslist": "^4.28.7",
+      "@angular/common": "^22.1.1",
+      "@angular/core": "^22.1.0",
+      "@angular/compiler": "^22.1.0",
+      "esbuild": "^0.28.1"
     },
     "allowedDeprecatedVersions": {
       "@angular/animations": "22.0.2",
